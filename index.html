@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Stalemate&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>wedding-site</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="offer">
+                <h1 class="offer__title">
+                    Vladimir & Taisiya
+                </h1>
+                <p class="offer__text">
+                    Приглашаем вас разделить радость!
+                </p>
+            </div>
+        </div>
+    </header>
+    <section class="time">
+        <div class="container">
+            <div class="time__offer">
+                <p class="time__text">
+                    Мы рады сообщить вам о нашей свадьбе,<br>
+ которая состоится 
+                </p>
+                <p class="time__date"> 21 июля 2024 года</p>
+                <p class="time__date2">
+                    воскресенье
+                </p>
+            </div>
+            <div class="time__countwon">
+               <p> до свадьбы осталось</p>
+               <div class="timer" id="timer">
+                <div class="timer1">
+                    <span class="timer__number" id='day'>00 </span><p class="timer__text"> Дни</p>
+                </div>
+                <span class="dots">:</span>
+                <div class="timer1">
+                    <span class="timer__number" id='hrs'>00</span><p class="timer__text">Часы</p>
+                </div>
+                <span class="dots">:</span>
+                <div class="timer1">
+                    <span class="timer__number" id='min'>00 </span><p class="timer__text">Минуты</p>
+                </div>
+                <span class="dots">:</span>
+                <div class="timer1">
+                    <span class="timer__number" id='sec'>00 </span><p class="timer__text">Секунды</p>
+                </div>
+               </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="location">
+        <div class="container">
+            <p class="location__title">ЛОКАЦИЯ</p>
+            <p class="location__text">Торжество начнется в 16:00<br>
+                и будет проходить в ресторане “Sempre”</p>
+            <div class="map" id="container1"></div>
+        </div>
+        </div>
+    </section>
+    <section class="dress-code">
+        <div class="container">
+            <p class="dress-code__title">ДРЕСС КОД</p>
+            <p class="dress-code__text">Мы будем рады видеть вас в любом <br> наряде,но <br>
+                нам будет еще приятнее,если вы <br> поддержите <br> 
+               общую гамму нашего торжества</p>
+            <div class="color-boll-con">
+                <div class="color-boll color-boll_1"></div>
+            <div class="color-boll color-boll_2"></div>
+            <div class="color-boll color-boll_3"></div>
+            <div class="color-boll color-boll_4"></div>
+            <div class="color-boll color-boll_5"></div>
+            <div class="color-boll color-boll_6"></div>
+            </div>
+        </div>
+    </section>
+    <section class="program">
+        <div class="container">
+            <p class="program__title">ПРОГРАММА ДНЯ</p>
+            <div class="program-1">
+                <p class="program-time">16:30</p>
+                <span class="program-dot"></span>
+                <p class="grogram-name">Сбор гостей</p>
+            </div>
+            <div class="program-1">
+                <p class="program-time">17:00 </p>
+                <span class="program-dot"></span>
+                <p class="grogram-name">Церемония</p>
+            </div>
+            <div class="program-1">
+                <p class="program-time">18:00</p>
+                <span class="program-dot"></span>
+                <p class="grogram-name">банкет</p>
+            </div>
+            <div class="program-1">
+                <p class="program-time">20:00</p>
+                <span class="program-dot"></span>
+                <p class="grogram-name">праздничный торт </p>
+            </div>
+            <div class="program-1">
+                <p class="program-time">22:00</p>
+                <span class="program-dot"></span>
+                <p class="grogram-name">завершение вечера</p>
+            </div>
+        </div>
+    </section>
+    <section class="guest">
+        <div class="container">
+            <p class="guest__title">
+                АНКЕТА ГОСТЯ
+            </p>
+            <p class="guest__text-1">
+                Ваши ответы на вопросы очень помогут нам при органиции свадьбы
+            </p>
+            <p class="guest__text-2">
+                Будем ждать ответ до 5.06.24
+            </p>
+            <form id="myForm" action="https://formspree.io/f/mbjnekoo" method="POST">
+                <div class="input-container">
+                    <label for="name" class="input__name">Имя и фамилия</label>
+                    <input id="name" type="text" name="name" class="input-name input" required>
+                </div>
+                <div class="input-container2">
+                    <p class="input__title">
+                        Присутствие
+                    </p>
+                    <div class="radio-container">
+                        <input id="invation-info1" type="radio" name="invitation" value="Я смогу прийти">
+                        <label for="invation-info1"></label>
+                        <span>Я смогу прийти</span>
+                    </div>
+                    <div class="radio-container radio-container_1">
+                        <input id="invation-info2" type="radio" name="invitation" value="Я не смогу прийти">
+                        <label for="invation-info2"></label>
+                        <span>Я не смогу прийти</span>
+                    </div>
+                </div>
+                <div class="input-container3">
+                    <p class="input__title2">
+                        Предпочтения по напиткам
+                    </p>
+                    <p class="input__text">
+                        можно выбрать несколько вариантов ответа
+                    </p>
+                    <div class="radio-container__info">
+                        <input id="invation-info-drink1" type="checkbox" name="drinks" value="Безалкогольные">
+                        <label for="invation-info-drink1"></label>
+                        <span>Безалкогольные</span>
+                    </div>
+                    <div class="radio-container__info">
+                        <input id="invation-info_drink2" type="checkbox" name="drinks" value="Горячие">
+                        <label for="invation-info_drink2"></label>
+                        <span>Горячие</span>
+                    </div>
+                    <div class="radio-container__info">
+                        <input id="invation-info-drink3" type="checkbox" name="drinks" value="Газированные">
+                        <label for="invation-info-drink3"></label>
+                        <span>Газированные</span>
+                    </div>
+                    <div class="radio-container__info">
+                        <input id="invation-info-drink4" type="checkbox" name="drinks" value="Прохладительные">
+                        <label for="invation-info-drink4"></label>
+                        <span>Прохладительные</span>
+                    </div>
+                    <div class="radio-container__info">
+                        <input id="invation-info-drink5" type="checkbox" name="drinks" value="Другое">
+                        <label for="invation-info-drink5"></label>
+                        <span>Другое</span>
+                    </div>
+                    <div class=" input-container_1">
+                        <label class="else" for="else">напишите название напитка</label>
+                        <input id="else" type="text" name="name" class="input-else " required>
+                    </div>
+                </div>
+                <button class="btn" id="submitButton" type="submit">Отправить</button>
+                </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__title">ДО СКОРОЙ ВСТРЕЧИ!</p>
+        </div>
+    </footer>
+    <script src="https://mapgl.2gis.com/api/js/v1"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
